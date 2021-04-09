@@ -16,10 +16,15 @@ Pizza.prototype.meatPrice = function() {
   return (this.meats.length - 1) * 0.75;
 }
 
+Pizza.prototype.cheesePrice = function() {
+
+}
+
+//^The cheesePrice prototype should only charge them for extra cheeses. There will be a default input choice where they get one foundational cheese that they can decide, or no cheese!
+
 // const veggieToppings = ["Olives", "Red Onions", "Mushrooms", "Bell Pepper", "Fresh Spinach", "Artichokes", "Sun-dried Tomatoes", "Pineapple", "Pesto"]
 // const meatToppings = ["Sausage", "Chicken", "Ham", "Bacon", "Pepperoni"]
 // const cheeseToppings = ["Parmesan", "Cheddar", "Feta", "Mozzarella", "Smoked Gouda"]
-
 
 
 // // Write out thought process of what needs to happen:
