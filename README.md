@@ -27,9 +27,11 @@ _{Leave nothing to chance! You want it to be easy for potential users, employers
 
 ## Specs/Tests
 
+### Describe: (Constructor) function Pizza() {}
+
 * Test: "It should allow the creation of pizza objects with multiple attributes"
-  * Code: 
-  * Expected Output:
+  * Code: console.log(Pizza.toppings); console.log(Pizza.size);
+  * Expected Output: > {}, > size
 
 * Test: 
   * Code: 
