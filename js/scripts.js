@@ -22,12 +22,12 @@ Pizza.prototype.cheesePrice = function() {
 //^The cheesePrice prototype should only charge them for extra cheeses. There will be a default input choice where they get one foundational cheese that they can decide, or no cheese!
 
 Pizza.prototype.sizePrice = function() {
-  if (this.size === 0) {
-    return this.size + 5;
-  } else if (this.size === 1) {
-    return this.size + 6;
+  if (this.size === [0]) {
+    return 5;
+  } else if (this.size === [1]) {
+    return 6;
   } else {
-    return this.size + 7;
+    return 7;
   }
 }
 

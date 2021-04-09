@@ -29,32 +29,32 @@ _{Leave nothing to chance! You want it to be easy for potential users, employers
 
 ### Describe: (Constructor) function Pizza() {} Pass
 * Test: "It should allow the creation of pizza objects with multiple attributes"
-  * Code: let pizza = new Pizza("Olives", "Chicken", "Cheddar", "Large");
+  * Code: let pizza = new Pizza(["Olives"], ["Chicken"], ["Cheddar"], ["Large"]);
     console.log(pizza);
-  * Expected Output: Pizza {veggies: "Olives", meats: "Chicken", cheeses: "Cheddar", size: "Large"}
+  * Expected Output: Pizza {veggies: ["Olives"], meats: ["Chicken"], cheeses: ["Cheddar"], size: ["Large"]}
 
 ### Describe: Pizza.prototype.veggiePrice = function() {} Pass
 * Test: "It should find the number of veggies the user picked and multiply it by the veggie topping price. The first topping of veggies should be free"
-  * Code: let pizza = new Pizza(["Olives", "Red Onions", "Fresh Spinach"], "Chicken", "Cheddar", "Large");
+  * Code: let pizza = new Pizza(["Olives", "Red Onions", "Fresh Spinach"], ["Chicken"], ["Cheddar"], ["Large"]);
     console.log(pizza.veggiePrice())
   * Expected Output: 0.5
 
 ### Describe: Pizza.prototype.meatPrice = function() {} Pass
 * Test: "It should find the number of meats the user picked and only charge them for each one after the first"
-  * Code: let pizza = new Pizza("Fresh Spinach", ["Chicken", "Bacon", "Pepperoni"], "Cheddar", "Large");
+  * Code: let pizza = new Pizza(["Fresh Spinach"], ["Chicken", "Bacon", "Pepperoni"], ["Cheddar"], ["Large"]);
     console.log(pizza.meatPrice());
   * Expected Output: 1.5
 
 ### Describe: Pizza.prototype.cheesePrice = function() {}
 * Test: "It should find the number of extra cheeses the user picked and charge them 50 cents for each one"
-  * Code: let pizza = new Pizza("Fresh Spinach", "Chicken", ["Cheddar", "Smoked Gouda", "Parmesan", "Feta"], "Large");
+  * Code: let pizza = new Pizza(["Fresh Spinach"], ["Chicken"], ["Cheddar", "Smoked Gouda", "Parmesan", "Feta"], ["Large"]);
     console.log(pizza.cheesePrice());
   * Expected Output: 2
 
 ### Describe: Pizza.prototype.sizePrice = function() {}
 * Test: "It should adjust the base price of the pizza depending on which size the user picks"
-  * Code: let smallPizza = new Pizza("Fresh Spinach", "Chicken", "Cheddar", 0);
-    let largePizza = new Pizza("Fresh Spinach", "Chicken", "Cheddar", 2);
+  * Code: let smallPizza = new Pizza(["Fresh Spinach"], ["Chicken"], ["Cheddar"], [0]);
+    let largePizza = new Pizza(["Fresh Spinach"], ["Chicken"], ["Cheddar"], [2]);
     console.log(smallPizza.sizePrice());
     console.log(largePizza.sizePrice());
   * Expected Output: 5, 7
