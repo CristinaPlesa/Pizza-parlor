@@ -39,9 +39,11 @@ _{Leave nothing to chance! You want it to be easy for potential users, employers
     console.log(pizza.veggiePrice())
   * Expected Output: 0.5
 
-* Test:
-  * Code: 
-  * Expected Output:
+### Describe: Pizza.prototype.meatPrice = function() {}
+* Test: "It should find the number of meats the user picked and only charge them for each one after the first"
+  * Code: let pizza = new Pizza("Fresh Spinach", ["Chicken", "Bacon", "Pepperoni"], "Cheddar", "Large");
+    console.log(pizza.meatPrice())
+  * Expected Output: 1.5
 
 * Test:
   * Code: 

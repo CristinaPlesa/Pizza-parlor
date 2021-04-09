@@ -12,6 +12,9 @@ Pizza.prototype.veggiePrice = function() {
   return (this.veggies.length - 1) * 0.25;
 }
 
+Pizza.prototype.meatPrice = function() {
+  return (this.meats.length - 1) * 0.75;
+}
 
 // const veggieToppings = ["Olives", "Red Onions", "Mushrooms", "Bell Pepper", "Fresh Spinach", "Artichokes", "Sun-dried Tomatoes", "Pineapple", "Pesto"]
 // const meatToppings = ["Sausage", "Chicken", "Ham", "Bacon", "Pepperoni"]
