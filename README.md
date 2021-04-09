@@ -33,10 +33,11 @@ _{Leave nothing to chance! You want it to be easy for potential users, employers
     console.log(pizza);
   * Expected Output: Pizza {veggieToppings: "Olives", meatToppings: "Chicken", cheeseToppings: "Cheddar", size: "Large"}
 
-### Describe: function VeggiesAvailable() {
-* Test: "It should declare the different veggie toppings available and then loop through each topping to identify which ones are picked by user"
-  * Code: console.log(Pizza.veggie)
-  * Expected Output:
+### Describe: Pizza.prototype.veggiePrice = function() {}
+* Test: "It should find the number of veggies the user picked and multiply it by the veggie topping price. The first topping of veggies should be free"
+  * Code: let pizza = new Pizza(["Olives", "Red Onions", "Fresh Spinach"], "Chicken", "Cheddar", "Large");
+    console.log(pizza.veggiePrice())
+  * Expected Output: 0.50
 
 * Test:
   * Code: 

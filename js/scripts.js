@@ -8,12 +8,14 @@ function Pizza(veggies, meats, cheeses, size) {
   this.size = size;
 }
 
-function VeggiesAvailable() {}
+Pizza.prototype.veggiePrice = function() {
+  return (this.veggies.length - 1) * 0.25;
+}
 
 
-const veggieToppings = ["Olives", "Red Onions", "Mushrooms", "Bell Pepper", "Fresh Spinach", "Artichokes", "Sun-dried Tomatoes", "Pineapple", "Pesto"]
-const meatToppings = ["Sausage", "Chicken", "Ham", "Bacon", "Pepperoni"]
-const cheeseToppings = ["Parmesan", "Cheddar", "Feta", "Mozzarella", "Smoked Gouda"]
+// const veggieToppings = ["Olives", "Red Onions", "Mushrooms", "Bell Pepper", "Fresh Spinach", "Artichokes", "Sun-dried Tomatoes", "Pineapple", "Pesto"]
+// const meatToppings = ["Sausage", "Chicken", "Ham", "Bacon", "Pepperoni"]
+// const cheeseToppings = ["Parmesan", "Cheddar", "Feta", "Mozzarella", "Smoked Gouda"]
 
 
 
