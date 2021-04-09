@@ -46,14 +46,18 @@ _{Leave nothing to chance! You want it to be easy for potential users, employers
   * Expected Output: 1.5
 
 ### Describe: Pizza.prototype.cheesePrice = function() {}
-* Test: "It should find the number of extra cheeses the user picked and charge them 50 cents for each one."
+* Test: "It should find the number of extra cheeses the user picked and charge them 50 cents for each one"
   * Code: let pizza = new Pizza("Fresh Spinach", "Chicken", ["Cheddar", "Smoked Gouda", "Parmesan", "Feta"], "Large");
-    console.log(pizza.cheesePrice())
+    console.log(pizza.cheesePrice());
   * Expected Output: 2
 
-* Test:
-  * Code: 
-  * Expected Output:
+### Describe: Pizza.prototype.sizePrice = function() {}
+* Test: "It should adjust the base price of the pizza depending on which size the user picks"
+  * Code: let smallPizza = new Pizza("Fresh Spinach", "Chicken", "Cheddar", 0);
+    let largePizza = new Pizza("Fresh Spinach", "Chicken", "Cheddar", 2);
+    console.log(smallPizza.sizePrice());
+    console.log(largePizza.sizePrice());
+  * Expected Output: 5, 7
 
 * Test:
   * Code: 

@@ -17,12 +17,21 @@ Pizza.prototype.meatPrice = function() {
 }
 
 Pizza.prototype.cheesePrice = function() {
-  return this.cheeses.length * 0.5
+  return this.cheeses.length * 0.5;
 }
-
 //^The cheesePrice prototype should only charge them for extra cheeses. There will be a default input choice where they get one foundational cheese that they can decide, or no cheese!
 
-// const veggieToppings = ["Olives", "Red Onions", "Mushrooms", "Bell Pepper", "Fresh Spinach", "Artichokes", "Sun-dried Tomatoes", "Pineapple", "Pesto"]
+Pizza.prototype.sizePrice = function() {
+  if (this.size === 0) {
+    return this.size + 5;
+  } else if (this.size === 1) {
+    return this.size + 6;
+  } else {
+    return this.size + 7;
+  }
+}
+
+// const veggieToppings = ["Olives", "Red Onions", "Mushrooms", "Bell Pepper", "Fresh Spinach", "Artichokes", "Sun-dried Tomatoes", "Pineapple", "Pesto", "Fresh Basil"]
 // const meatToppings = ["Sausage", "Chicken", "Ham", "Bacon", "Pepperoni"]
 // const cheeseToppings = ["Parmesan", "Cheddar", "Feta", "Mozzarella", "Smoked Gouda", "Ricotta"]
 
