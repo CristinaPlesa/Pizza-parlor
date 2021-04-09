@@ -28,10 +28,10 @@ _{Leave nothing to chance! You want it to be easy for potential users, employers
 ## Specs/Tests
 
 ### Describe: (Constructor) function Pizza() {}
-
 * Test: "It should allow the creation of pizza objects with multiple attributes"
-  * Code: console.log(pizza);
-  * Expected Output: "Olives", "Chicken", "Cheddar", "Large"
+  * Code: let pizza = new Pizza("Olives", "Chicken", "Cheddar", "Large");
+    console.log(pizza);
+  * Expected Output: Pizza {veggieToppings: "Olives", meatToppings: "Chicken", cheeseToppings: "Cheddar", size: "Large"}
 
 * Test: 
   * Code: 
