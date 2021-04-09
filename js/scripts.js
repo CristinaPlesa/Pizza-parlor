@@ -6,6 +6,3 @@ function Pizza(veggie, meat, cheese, size) {
   // this.toppings = {};
   this.size = size;
 }
-
-let pizza = new Pizza("Olives", "Chicken", "Cheddar", "Large")
-console.log(pizza);
