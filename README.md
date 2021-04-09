@@ -27,17 +27,17 @@ _{Leave nothing to chance! You want it to be easy for potential users, employers
 
 ## Specs/Tests
 
-### Describe: (Constructor) function Pizza() {}
+### Describe: (Constructor) function Pizza() {} Pass
 * Test: "It should allow the creation of pizza objects with multiple attributes"
   * Code: let pizza = new Pizza("Olives", "Chicken", "Cheddar", "Large");
     console.log(pizza);
-  * Expected Output: Pizza {veggieToppings: "Olives", meatToppings: "Chicken", cheeseToppings: "Cheddar", size: "Large"}
+  * Expected Output: Pizza {veggies: "Olives", meats: "Chicken", cheeses: "Cheddar", size: "Large"}
 
-### Describe: Pizza.prototype.veggiePrice = function() {}
+### Describe: Pizza.prototype.veggiePrice = function() {} Pass
 * Test: "It should find the number of veggies the user picked and multiply it by the veggie topping price. The first topping of veggies should be free"
   * Code: let pizza = new Pizza(["Olives", "Red Onions", "Fresh Spinach"], "Chicken", "Cheddar", "Large");
     console.log(pizza.veggiePrice())
-  * Expected Output: 0.50
+  * Expected Output: 0.5
 
 * Test:
   * Code: 
