@@ -1,21 +1,29 @@
 // Business Logic for Pizza
 
-function Pizza(veggies, meats, cheeses, sizes) {
+function Pizza(veggies, meats, cheeses, size) {
   this.veggies = veggies;
   this.meats = meats;
   this.cheeses = cheeses;
   // this.toppings = {};
-  this.sizes = sizes;
+  this.size = size;
 }
 
-function VeggiesAvailable() {
-  const veggieToppings = ["Olives", "Red Onions", "Mushrooms", "Bell Pepper", "Fresh Spinach", "Artichokes", "Sun-dried Tomatoes", "Pineapple", "Pesto"]
-  
-  for ()
+let Menu = {
+  veggieToppings: [],
+  meatToppings: [],
+  cheeseToppings: []
 }
 
-// const meatToppings = ["Sausage", "Chicken", "Ham", "Bacon", "Pepperoni"]
-//   const cheeseToppings = ["Parmesan", "Cheddar", "Feta", "Mozzarella", "Smoked Gouda"]
+// function VeggiesAvailable() {
+
+//   veggieToppings.forEach(function(veggie)) {
+//     Pizza.veggies = Pizza.veggies.push()
+//   }
+// }
+
+const veggieToppings = ["Olives", "Red Onions", "Mushrooms", "Bell Pepper", "Fresh Spinach", "Artichokes", "Sun-dried Tomatoes", "Pineapple", "Pesto"]
+const meatToppings = ["Sausage", "Chicken", "Ham", "Bacon", "Pepperoni"]
+const cheeseToppings = ["Parmesan", "Cheddar", "Feta", "Mozzarella", "Smoked Gouda"]
 
 
 // Pizza.prototype.toppingsAvailable = function() {

@@ -33,8 +33,8 @@ _{Leave nothing to chance! You want it to be easy for potential users, employers
     console.log(pizza);
   * Expected Output: Pizza {veggieToppings: "Olives", meatToppings: "Chicken", cheeseToppings: "Cheddar", size: "Large"}
 
-### Describe: Pizza.prototype.toppingsAvailable = function() {}
-* Test: "It should declare the different toppings available and then push those toppings to their respective property value (will become empty arrays)"
+### Describe: function VeggiesAvailable() {
+* Test: "It should declare the different veggie toppings available and then loop through each topping to identify which ones are picked by user"
   * Code: console.log(Pizza.veggie)
   * Expected Output:
 
