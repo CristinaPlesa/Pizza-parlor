@@ -30,8 +30,8 @@ _{Leave nothing to chance! You want it to be easy for potential users, employers
 ### Describe: (Constructor) function Pizza() {}
 
 * Test: "It should allow the creation of pizza objects with multiple attributes"
-  * Code: console.log(Pizza.toppings); console.log(Pizza.size);
-  * Expected Output: > {}, > size
+  * Code: console.log(pizza);
+  * Expected Output: "Olives", "Chicken", "Cheddar", "Large"
 
 * Test: 
   * Code: 
