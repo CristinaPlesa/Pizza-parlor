@@ -34,7 +34,7 @@ Pizza.prototype.sizePrice = function() {
 
 
 // const veggieToppings = ["Olives", "Red Onions", "Mushrooms", "Bell Pepper", "Fresh Spinach", "Artichokes", "Sun-dried Tomatoes", "Pineapple", "Pesto", "Fresh Basil"]
-// const meatToppings = ["Sausage", "Chicken", "Ham", "Bacon", "Pepperoni"]
+// const meatToppings = ["Sausage", "Chicken", "Ham", "Bacon", "Pepperoni"] <<Brought to you by Veat!
 // const cheeseToppings = ["Parmesan", "Cheddar", "Feta", "Mozzarella", "Smoked Gouda", "Ricotta"]
 
 
@@ -45,4 +45,6 @@ Pizza.prototype.sizePrice = function() {
 // pizza should also have function that has basic cost - that cost should be coming from the pizza size the user picks
 //also functions with how much each topping property should cost each time they add one)
 // * Business - Then function needs to add the cost each time the user picks an available topping. UI - They can choose from a top down menu that will add each topping each time or radio input kind that allows user to select multiple options.
+
+//"This vegetarian meat substitute is locally sourced from our partnering company Veat!" (Create logo with registered trademark!) "Their mission statement is to bring health and flavor together in a whirlwind to bring you peace of mind and a happy stomach!! All their Veat products are made from a combination of black beans, pinto beans, soy, vegetables, and herbs."
 // //
