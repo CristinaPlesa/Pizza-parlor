@@ -38,8 +38,13 @@ Pizza.prototype.totalPrice = function() {
 
 //UI Logic
 $(document).ready(function() {
-  
-})
+  $("#customPizzaInput").submit(function(event) {
+    const userInput = $("#customPizzaInput").val();
+ 
+    });
+    event.preventDefault();
+  });
+});
 
 
 
