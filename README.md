@@ -60,22 +60,6 @@ This application relies on a constructor function within Javascript, allowing us
   console.log(pizza.totalPrice());
   * Expected Output: 9.5
 
-* Test:
-  * Code: 
-  * Expected Output:
-
-* Test:
-  * Code: 
-  * Expected Output:
-
-* Test:
-  * Code: 
-  * Expected Output:
-
-* Test:
-  * Code: 
-  * Expected Output:
-
 ## Known Bugs
 
 * 

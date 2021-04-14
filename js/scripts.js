@@ -36,6 +36,13 @@ Pizza.prototype.totalPrice = function() {
   return totalPrice;
 }
 
+//UI Logic
+$(document).ready(function() {
+  
+})
+
+
+
 // const veggieToppings = ["Olives", "Red Onions", "Mushrooms", "Bell Pepper", "Fresh Spinach", "Artichokes", "Sun-dried Tomatoes", "Pineapple", "Pesto", "Fresh Basil"]
 // const meatToppings = ["Sausage", "Chicken", "Ham", "Bacon", "Pepperoni"] <<Brought to you by Veat!
 // const cheeseToppings = ["Parmesan", "Cheddar", "Feta", "Mozzarella", "Smoked Gouda", "Ricotta"]
