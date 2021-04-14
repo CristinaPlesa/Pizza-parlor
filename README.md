@@ -54,9 +54,11 @@ This application relies on a constructor function within Javascript, allowing us
     console.log(largePizza.sizePrice());
   * Expected Output: 5, 7
 
-* Test:
-  * Code: 
-  * Expected Output:
+### Describe: Pizza.prototype.totalPrice = function() {}
+* Test: "It should add the Pizza toppings and size price together and return the price total"
+  * Code: let pizza = new Pizza(["Olives", "Red Onions", "Fresh Spinach", "Artichokes", "Fresh Basil"], ["Chicken"], ["Cheddar", "Smoked Gouda", "Parmesan"], ["Large"]);
+  console.log(pizza.totalPrice());
+  * Expected Output: 9.5
 
 * Test:
   * Code: 
