@@ -16,38 +16,38 @@
     <form class="form-group" id="customPizzaInput">
       <div id="veggieToppings">
         <p>Veggie Toppings ($0.25 - first topping is free!):</p>
-        <input type="checkbox" id="veggie1" name="veggie1" value="Olives">
+        <input type="checkbox" class="veggie" id="veggie1" name="veggie1" value="Olives">
         <label for="veggie1">Olives</label><br>
-        <input type="checkbox" id="veggie2" name="veggie2" value="Red Onions">
+        <input type="checkbox" class="veggie" id="veggie2" name="veggie2" value="Red Onions">
         <label for="veggie2">RedOnions</label><br>
-        <input type="checkbox" id="veggie3" name="veggie3" value="Mushrooms">
+        <input type="checkbox" class="veggie" id="veggie3" name="veggie3" value="Mushrooms">
         <label for="veggie3">Mushrooms</label><br>
-        <input type="checkbox" id="veggie4" name="veggie4" value="Bell Peppers">
+        <input type="checkbox" class="veggie" id="veggie4" name="veggie4" value="Bell Peppers">
         <label for="veggie4">Bell Peppers</label><br>
-        <input type="checkbox" id="veggie5" name="veggie5" value="Fresh Spinach">
+        <input type="checkbox" class="veggie" id="veggie5" name="veggie5" value="Fresh Spinach">
         <label for="veggie5">Fresh Spinach</label><br>
-        <input type="checkbox" id="veggie6" name="veggie6" value="Artichokes">
+        <input type="checkbox" class="veggie" id="veggie6" name="veggie6" value="Artichokes">
         <label for="veggie6">Artichokes</label><br>
-        <input type="checkbox" id="veggie7" name="veggie7" value="Sun-dried Tomatoes">
+        <input type="checkbox" class="veggie" id="veggie7" name="veggie7" value="Sun-dried Tomatoes">
         <label for="veggie7">Sun-dried Tomatoes</label><br>
-        <input type="checkbox" id="veggie8" name="veggie8" value="Pineapple">
+        <input type="checkbox" class="veggie" id="veggie8" name="veggie8" value="Pineapple">
         <label for="veggie8">Pineapple</label><br>
-        <input type="checkbox" id="veggie9" name="veggie9" value="Pesto">
+        <input type="checkbox" class="veggie" id="veggie9" name="veggie9" value="Pesto">
         <label for="veggie9">Pesto</label><br>
-        <input type="checkbox" id="veggie10" name="veggie10" value="Fresh Basil">
+        <input type="checkbox" class="veggie" id="veggie10" name="veggie10" value="Fresh Basil">
         <label for="veggie10">Fresh Basil</label><br>
       </div>
       <div id="meatToppings">
         <p>Meat Toppings ($0.75 - first topping is free!):</p>
-        <input type="checkbox" id="meat1" name="meat1" value="Chicken">
+        <input type="checkbox" class="meat" id="meat1" name="meat1" value="Chicken">
         <label for="meat1">Chicken</label><br>
-        <input type="checkbox" id="meat2" name="meat2" value="Sausage">
+        <input type="checkbox" class="meat" id="meat2" name="meat2" value="Sausage">
         <label for="meat2">Sausage</label><br>
-        <input type="checkbox" id="meat3" name="meat3" value="Ham">
+        <input type="checkbox" class="meat" id="meat3" name="meat3" value="Ham">
         <label for="meat3">Ham</label><br>
-        <input type="checkbox" id="meat4" name="meat4" value="Bacon">
+        <input type="checkbox" class="meat" id="meat4" name="meat4" value="Bacon">
         <label for="meat4">Bacon</label><br>
-        <input type="checkbox" id="meat5" name="meat5" value="Pepperoni">
+        <input type="checkbox" class="meat" id="meat5" name="meat5" value="Pepperoni">
         <label for="meat5">Pepperoni</label><br>
       </div>
       <div id="defaultCheeseToppings">
@@ -63,22 +63,32 @@
       </div>
       <div id="extraCheeseToppings">
         <p>Extra Cheese Toppings ($0.50):</p>
-        <input type="checkbox" id="cheese1" name="cheese1" value="Parmesan">
+        <input type="checkbox" class="cheese" id="cheese1" name="cheese1" value="Parmesan">
         <label for="cheese1">Parmesan</label><br>
-        <input type="checkbox" id="cheese2" name="cheese2" value="Cheddar">
+        <input type="checkbox" class="cheese" id="cheese2" name="cheese2" value="Cheddar">
         <label for="cheese2">Cheddar</label><br>
-        <input type="checkbox" id="cheese3" name="cheese3" value="Feta">
+        <input type="checkbox" class="cheese" id="cheese3" name="cheese3" value="Feta">
         <label for="cheese3">Feta</label><br>
-        <input type="checkbox" id="cheese4" name="cheese4" value="Mozzarella">
+        <input type="checkbox" class="cheese" id="cheese4" name="cheese4" value="Mozzarella">
         <label for="cheese4">Mozzarella</label><br>
-        <input type="checkbox" id="cheese5" name="cheese5" value="Smoked Gouda">
+        <input type="checkbox" class="cheese" id="cheese5" name="cheese5" value="Smoked Gouda">
         <label for="cheese5">Smoked Gouda</label><br>
-        <input type="checkbox" id="cheese6" name="cheese6" value="Ricotta">
+        <input type="checkbox" class="cheese" id="cheese6" name="cheese6" value="Ricotta">
         <label for="cheese6">Ricotta</label><br>
       </div>
-   
+      <div id="pizzaSize">
+        <p>Sizes:</p>
+        <input type="checkbox" class="size" id="size0" name="size0" value="Small">
+        <label for="size0">Small</label><br>
+        <input type="checkbox" class="size" id="size1" name="size1" value="Medium">
+        <label for="size1">Medium</label><br>
+        <input type="checkbox" class="size" id="size2" name="size2" value="Large">
+        <label for="size2">Large</label><br>
+      </div>
       <button type="submit" class="btn">Submit!</button>
     </form>
     <ul id="outputResults"></ul>
 </body>
 </html>
+
+<!-- change checked input forms for cheese default and size, to radio inputs -->

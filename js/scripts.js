@@ -4,7 +4,6 @@ function Pizza(veggies, meats, cheeses, size) {
   this.veggies = veggies;
   this.meats = meats;
   this.cheeses = cheeses;
-  // this.toppings = {};
   this.size = size;
 }
 
@@ -19,7 +18,6 @@ Pizza.prototype.meatPrice = function() {
 Pizza.prototype.cheesePrice = function() {
   return this.cheeses.length * 0.5;
 }
-//^The cheesePrice prototype should only charge them for extra cheeses. There will be a default input choice where they get one foundational cheese that they can decide, or no cheese!
 
 Pizza.prototype.sizePrice = function() {
   if (this.size === 0) {
@@ -36,15 +34,47 @@ Pizza.prototype.totalPrice = function() {
   return totalPrice;
 }
 
-//UI Logic
+// UI Logic
 $(document).ready(function() {
   $("#customPizzaInput").submit(function(event) {
-    const userInput = $("#customPizzaInput").val();
- 
-    });
     event.preventDefault();
-  });
+    const veggieArray = [];
+    const meatArray = [];
+    const cheeseArray = [];
+    const size = [];
+    $('input[class=veggie]').each(function () {
+      if (this.checked) {
+        veggieArray.push($(this).val());
+      }
+    });
+    $('input[class=meat]').each(function () {
+      if (this.checked) {
+        meatArray.push($(this).val());
+      }
+    });
+    $('input[class=cheese]').each(function () {
+      if (this.checked) {
+        cheeseArray.push($(this).val());
+      }
+    });
+    $('input[class=cheese]').each(function () {
+      if (this.checked) {
+        cheeseArray.push($(this).val());
+      }
+    });
+    $('input[class=size]').each(function () {
+      if (this.checked) {
+        size.push($(this).val());
+      }
+    });
+  const pizza = new Pizza(veggieArray,meatArray,cheeseArray, size);
+  ("#outputResults").text(totalPrice);
+  // not sure how to get the output back out to my html
+
 });
+
+
+
 
 
 
@@ -62,4 +92,3 @@ $(document).ready(function() {
 // * Business - Then function needs to add the cost each time the user picks an available topping. UI - They can choose from a top down menu that will add each topping each time or radio input kind that allows user to select multiple options.
 
 //"This vegetarian meat substitute is locally sourced from our partnering company Veat!" (Create logo with registered trademark!) "Their mission statement is to bring health and flavor together in a whirlwind to bring you peace of mind and a happy stomach!! All their Veat products are made from a combination of black beans, pinto beans, soy, vegetables, and herbs."
-// //
