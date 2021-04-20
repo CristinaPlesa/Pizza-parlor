@@ -41,7 +41,6 @@ $(document).ready(function() {
     const veggieArray = [];
     const meatArray = [];
     const cheeseArray = [];
-    const size = [];
     $('input[class=veggie]').each(function () {
       if (this.checked) {
         veggieArray.push($(this).val());
@@ -57,20 +56,12 @@ $(document).ready(function() {
         cheeseArray.push($(this).val());
       }
     });
-    $('input[class=cheese]').each(function () {
-      if (this.checked) {
-        cheeseArray.push($(this).val());
-      }
-    });
-    $('input[class=size]').each(function () {
-      if (this.checked) {
-        size.push($(this).val());
-      }
-    });
-  const pizza = new Pizza(veggieArray,meatArray,cheeseArray, size);
-  ("#outputResults").text(totalPrice);
-  // not sure how to get the output back out to my html
 
+    const sizeInput = parseInt($('input:radio[name=size]:checked').val());
+
+    const pizza = new Pizza(veggieArray,meatArray,cheeseArray, sizeInput);
+    $("#outputResults").text(pizza.totalPrice());
+  });
 });
 
 
@@ -91,4 +82,4 @@ $(document).ready(function() {
 //also functions with how much each topping property should cost each time they add one)
 // * Business - Then function needs to add the cost each time the user picks an available topping. UI - They can choose from a top down menu that will add each topping each time or radio input kind that allows user to select multiple options.
 
-//"This vegetarian meat substitute is locally sourced from our partnering company Veat!" (Create logo with registered trademark!) "Their mission statement is to bring health and flavor together in a whirlwind to bring you peace of mind and a happy stomach!! All their Veat products are made from a combination of black beans, pinto beans, soy, vegetables, and herbs."
+//"This vegetarian meat substitute is locally sourced from our partnering company Veat!" (Create logo with registered trademark!) "Their mission statement is to bring health and flavor together in a whirlwind to bring you peace of mind and a happy stomach!! All their Veat products are made from a combination of black beans, pinto beans, soy, vegetables, and herbs."//

@@ -76,18 +76,47 @@
         <input type="checkbox" class="cheese" id="cheese6" name="cheese6" value="Ricotta">
         <label for="cheese6">Ricotta</label><br>
       </div>
-      <div id="pizzaSize">
+      <div class="form-group" id="pizzaSize">
         <p>Sizes:</p>
-        <input type="checkbox" class="size" id="size0" name="size0" value="Small">
-        <label for="size0">Small</label><br>
-        <input type="checkbox" class="size" id="size1" name="size1" value="Medium">
-        <label for="size1">Medium</label><br>
-        <input type="checkbox" class="size" id="size2" name="size2" value="Large">
-        <label for="size2">Large</label><br>
+        <label>
+          <input type="radio" name="size" class="size" value="0" checked>
+          Small
+        </label><br>
+        <label>
+          <input type="radio" name="size" class="size" value="1">
+          Medium
+        </label><br>
+        <label>
+          <input type="radio" name="size" class="size" value="2">
+          Large
+        </label>
       </div>
+
+    
+
+
+
+<!-- 
+        <input type="radio" class="size" id="size0" name="size0" value="Small">
+        <label for="size0">Small</label><br>
+        <input type="radio" class="size" id="size1" name="size1" value="Medium">
+        <label for="size1">Medium</label><br>
+        <input type="radio" class="size" id="size2" name="size2" value="Large">
+        <label for="size2">Large</label><br>
+   
+
+      <label>
+        <input type="radio" name="mathFirst" class="mathFirst" value="yes">
+        Yes
+      </label>
+          <label>
+            <input type="radio" name="Small" class="size" value="small">
+            Small
+          </label> -->
+
       <button type="submit" class="btn">Submit!</button>
     </form>
-    <ul id="outputResults"></ul>
+    <p id="outputResults"></p>
 </body>
 </html>
 
