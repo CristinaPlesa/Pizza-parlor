@@ -50,16 +50,24 @@
         <input type="checkbox" class="meat" id="meat5" name="meat5" value="Pepperoni">
         <label for="meat5">Pepperoni</label><br>
       </div>
-      <div id="defaultCheeseToppings">
+      <div class="form-group" id="defaultCheeseToppings">
         <p>Pick a cheese base for your pizza:</p>
-        <input type="checkbox" id="cheeseDefault1" name="cheeseDefault1" value="Mozzarella">
-        <label for="cheeseDefault1">Mozzarella</label><br>
-        <input type="checkbox" id="cheeseDefault2" name="cheeseDefault2" value="Cheddar">
-        <label for="cheeseDefault2">Cheddar</label><br>
-        <input type="checkbox" id="cheeseDefault3" name="cheeseDefault3" value="Ricotta">
-        <label for="cheeseDefault3">Ricotta</label><br>
-        <input type="checkbox" id="noCheese" name="noCheese" value="No Cheese">
-        <label for="noCheese">No Cheese</label><br>
+        <label>
+          <input type="radio" name="cheeseDefault" class="cheeseDefault" value="Mozzarella" checked>
+          Mozzarella
+        </label><br>
+        <label>
+          <input type="radio" name="cheeseDefault" class="cheeseDefault" value="Cheddar">
+          Cheddar
+        </label><br>
+        <label>
+          <input type="radio" name="cheeseDefault" class="cheeseDefault" value="Ricotta">
+          Ricotta
+        </label><br>
+        <label>
+          <input type="radio" name="cheeseDefault" class="cheeseDefault" value="No Cheese">
+          No Cheese
+        </label><br>
       </div>
       <div id="extraCheeseToppings">
         <p>Extra Cheese Toppings ($0.50):</p>
@@ -92,32 +100,8 @@
         </label>
       </div>
 
-    
-
-
-
-<!-- 
-        <input type="radio" class="size" id="size0" name="size0" value="Small">
-        <label for="size0">Small</label><br>
-        <input type="radio" class="size" id="size1" name="size1" value="Medium">
-        <label for="size1">Medium</label><br>
-        <input type="radio" class="size" id="size2" name="size2" value="Large">
-        <label for="size2">Large</label><br>
-   
-
-      <label>
-        <input type="radio" name="mathFirst" class="mathFirst" value="yes">
-        Yes
-      </label>
-          <label>
-            <input type="radio" name="Small" class="size" value="small">
-            Small
-          </label> -->
-
       <button type="submit" class="btn">Submit!</button>
     </form>
     <p id="outputResults"></p>
 </body>
 </html>
-
-<!-- change checked input forms for cheese default and size, to radio inputs -->
